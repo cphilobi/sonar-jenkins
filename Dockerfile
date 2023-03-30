@@ -51,6 +51,8 @@ RUN set -eux; \
 
 COPY entrypoint.sh ${SONARQUBE_HOME}/docker/
 
+RUN chmod +x /opt/sonarqube/docker/entrypoint.sh
+
 WORKDIR ${SONARQUBE_HOME}
 EXPOSE 9000
 
