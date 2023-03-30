@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    imagename = "fdjapi10/sonar"
+    imagename = "cphilobi/sonar"
     registryCredential = 'dockerhub-creds'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/djapif10/sonar-jenkins.git', branch: 'main'])
+        git([url: 'https://github.com/cphilobi/sonar-jenkins.git', branch: 'main'])
       }
     }
     stage('Building image') {
