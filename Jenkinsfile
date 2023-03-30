@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/fdjapi/docker-jenkins.git', branch: 'main'])
+        git([url: 'https://github.com/djapif10/sonar-jenkins.git', branch: 'main'])
 
       }
     }
